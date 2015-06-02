@@ -18,13 +18,25 @@
 replacements for matplotlib&#39;s default, <code>jet</code>.</p>
 
 <h2>Introduction</h2>
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">bar</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">bar</span><span class="p">;</span>
-</code></pre></div>
+
 <h2>Colormaps</h2>
 
 <h2>How to generate</h2>
 
+<ol>
+<li>Install the <a href="https://github.com/njsmith/pycam02ucs">pycam02ucs package</a>.</li>
+<li>Check out and run any of the
+<a href="https://github.com/bids/colormap">colormap scripts</a>.</li>
+</ol>
+
+<p>To explore any other colormap:</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">pycam02ucs.cm.viscm</span> <span class="kn">import</span> <span class="n">viscm</span>
+
+<span class="n">viscm</span><span class="p">(</span><span class="s">&#39;jet&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
   </div>
 
 </body>
