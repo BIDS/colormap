@@ -46,6 +46,13 @@ parula_map = LinearSegmentedColormap.from_list('parula', data)
 
 if __name__ == "__main__":
     import matplotlib.pyplot as plt
-    from pycam02ucs.cm.viscm import viscm
-    viscm(parula_map)
+    import numpy as np
+
+    try:
+        from pycam02ucs.cm.viscm import viscm
+        viscm(parula_map)
+    except ImportError:
+        print("pycam02ucs not found, falling back on simple display")
+        plt.imshow(np.linspace(0, 100, 256)[None, :], aspect='auto',
+                   cmap=parula_map)
     plt.show()
