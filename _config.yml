@@ -4,12 +4,6 @@ tag_text: mpl colormaps
 description: An overview of the colormaps recommended to replace 'jet' as default.
 
 # Build settings
-markdown: kramdown
-
-kramdown:
-    input: GFM
-    use_coderay: true
-    coderay:
-        coderay_line_numbers: nil
+markdown: redcarpet
 
 exclude: ["README.md"]
