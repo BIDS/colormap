@@ -136,7 +136,15 @@ colormaps and play around with designing your own variants:
 python -m pycam02ucs.cm.viscm edit path/to/colormap_script.py
 ```
 
-It looks like this. We leave it as an exercise for the reader to play
-around and figure out how it works (we may write up some docs later).
+It looks like this. We leave it as an exercise for the reader to play around
+and figure out how it works--we may write up detailed docs later, but for now
+just some simple usage instructions:
+
+Drag to move spline control points, shift-click to add a control point,
+control-click to delete a control point.  The bottom bars let you set the
+min/max lightness, and click the colormap on the side to select which
+hue/saturation slice of color space you want the left pane to show. (The game
+is to keep the yellow dot inside the slice.)  If it starts acting weird try
+tapping your modifier keys, sometimes that fixes things.
 
 <a href="./images/screenshots/editor.png"><img src="./images/screenshots/editor.png"></a>
