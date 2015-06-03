@@ -3,7 +3,7 @@ layout: default
 ---
 
 This page gives an overview of the colormaps we (= Stéfan van der Walt
-and Nathaniel Smith) have generated as potential replacements for
+and Nathaniel Smith) have designed as potential replacements for
 matplotlib's default, ``jet``.
 
 First for comparison we show what several well-known colormaps look
@@ -42,16 +42,18 @@ A) From top left to bottom right: the colormap, its grayscale version,
    Of the 4 colorblind simulations below, the upper-left one --
    "Moderate deuteranomaly" -- represents by far the most common
    form. It affects something like 5% of white men. (Well, this is a
-   slightly simplification because some people will have somewhat
+   slight simplification because some people will have somewhat
    stronger or weaker colorblindness, and this just picks a single
    point in the middle of the scale. But that's good enough for
    present purposes.)
 
 B) A 3-dimensional visualization of the colormap spline through
    CAM02-UCS color space. This is more interesting in the interactive
-   version. In the interactive version (see below) you can click on
-   the "Toggle gamut" button to see an outline of which colors are
-   actually possible in sRGB.
+   version. The little dots are equally spaced in the data space, so
+   "perceptually uniform" in this plot means that the dots should be
+   equally spaced in the visualization. In the interactive version
+   (see below) you can click on the "Toggle gamut" button to see an
+   outline of which colors are actually possible in sRGB.
 
 C) Example images colored with the test colormap (left column) and how
    it would be perceived by readers with the most common form of color
