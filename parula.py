@@ -43,6 +43,8 @@ data = [[0.2081, 0.1663, 0.5292], [0.2116238095, 0.1897809524, 0.5776761905],
  [0.9763, 0.9831, 0.0538]]
 
 parula_map = LinearSegmentedColormap.from_list('parula', data)
+# For use of "viscm view"
+test_cm = parula_map
 
 if __name__ == "__main__":
     import matplotlib.pyplot as plt
