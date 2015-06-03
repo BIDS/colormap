@@ -132,7 +132,7 @@ colormaps and play around with designing your own variants:
 python -m pycam02ucs.cm.viscm edit path/to/colormap_script.py
 ```
 
-It looks like this. We are tired and want to go home, so we will leave
-you to explore how it works yourself, and write better docs later :-).
+It looks like this. We leave it as an exercise for the reader to play
+around and figure out how it works (we may write up some docs later).
 
 <a href="./images/screenshots/editor.png"><img src="./images/screenshots/editor.png"></a>
