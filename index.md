@@ -11,6 +11,10 @@ like using a visualization tool we developed for assessing colormap
 quality, and then give 3 new colormaps that we've designed. We'd like
 feedback on which one you like best!
 
+Please leave comments on
+[this thread](http://www.google.com/url?q=http%3A%2F%2Fthread.gmane.org%2Fgmane.comp.python.matplotlib.devel%2F13522&sa=D&sntz=1&usg=AFQjCNFdCG-0DNabGcTfCKL49OLY_Td66g)
+or [email us directly](mailto:njs@pobox.com).
+
 ## Well-known colormaps
 
 ### Jet
