@@ -14,38 +14,85 @@
 <body>
   <div class="container">
     <h1><a href="./">mpl colormaps</a></h1>
-    <p>This page gives an overview of the colormaps generated as potential
-replacements for matplotlib&#39;s default, <code>jet</code>.</p>
+    <p>This page gives an overview of the colormaps we (= Stéfan van der Walt
+and Nathaniel Smith) have generated as potential replacements for
+matplotlib&#39;s default, <code>jet</code>.</p>
 
-<h2>Introduction</h2>
+<p>First for comparison we show what several well-known colormaps look
+like using a visualization tool we developed for assessing colormap
+quality, and then give 3 new colormaps that we&#39;ve designed. We&#39;d like
+feedback on which one you like best!</p>
 
-<p>The <code>viscm</code> designer screen, used to define the 3-dimensionsional
-spline path taken by the colormap through the CAM02-UCS color space.
-This color space is transformed (warped) so that equal Euclidean
-distances represent approximately equal jumps in human perceptual
-difference.</p>
+<h2>Well-known colormaps</h2>
 
-<p><a href="./images/screenshots/editor.png"><img src="./images/screenshots/editor.png"></a></p>
+<h3>Jet</h3>
 
-<h2>Colormaps</h2>
+<p>To start with, here&#39;s jet:</p>
 
-<p>Click on any of the figure below to expand.  The annotated parts are:</p>
+<p><a href="./images/screenshots/jet.png"><img src="./images/jet-annotated.png"></a></p>
+
+<p>You can click on the figure to expand it. The annotated parts are:</p>
 
 <p>A) From top left to bottom right: the colormap, its grayscale version,
-perceptual deltas and perceptual lightness deltas.  Thereafter follows
-four different simulations of color blindness.</p>
+   perceptual deltas and perceptual lightness deltas.  Thereafter
+   follows four different simulations of color blindness.</p>
+
+<p>A &quot;perceptually uniform&quot; colormap is one for which the &quot;perceptual
+   deltas&quot; plot makes a simple horizontal line. (This is essentially
+   the derivative of the colormap in perceptual space with respect to
+   the data. We want our colormap to have the property that if your
+   data goes from 0.1 to 0.2, this should create about the same
+   perceptual change as if your data goes from 0.8 to 0.9. For color
+   geeks: we&#39;re using CAM02-UCS as our model of perceptual distance.)</p>
+
+<p>You can see that jet is not perceptually uniform.</p>
+
+<p>The plot on the right is similar, but shows how perceptually
+   uniform the colormap is if you print it in black-and-white. We
+   again want this to be a flat horizontal line.</p>
+
+<p>Of the 4 colorblind simulations below, the upper-left one --
+   &quot;Moderate deuteranomaly&quot; -- represents by far the most common
+   form. It affects something like 5% of white men. (Well, this is a
+   slightly simplification because some people will have somewhat
+   stronger or weaker colorblindness, and this just picks a single
+   point in the middle of the scale. But that&#39;s good enough for
+   present purposes.)</p>
 
 <p>B) A 3-dimensional visualization of the colormap spline through
-   CAM02-UCS color space.  Click on the &quot;Toggle gamut&quot; button to see
-   the entire gamut.</p>
+   CAM02-UCS color space. This is more interesting in the interactive
+   version. In the interactive version (see below) you can click on
+   the &quot;Toggle gamut&quot; button to see an outline of which colors are
+   actually possible in sRGB.</p>
 
 <p>C) Example images colored with the test colormap (left column) and how
    it would be perceived by readers with the most common form of color
    blindness (right column).</p>
 
-<h3>Jet</h3>
+<h3>Parula</h3>
 
-<p><a href="./images/screenshots/jet.png"><img src="./images/jet-annotated.png"></a></p>
+<p>This is MATLAB(R)&#39;s new default colormap.</p>
+
+<p><a href="./images/screenshots/parula.png"><img src="./images/screenshots/parula.png"></a></p>
+
+<h3>Gray</h3>
+
+<p>Good old &quot;gray&quot;:</p>
+
+<p><a href="./images/screenshots/gray.png"><img src="./images/screenshots/gray.png"></a></p>
+
+<h2>Our new colormaps</h2>
+
+<p>We&#39;ve made a few new colormaps, all using the same general bluish to
+reddish to yellowish sequence, because this is relatively friendly to
+common forms of colorblindness.</p>
+
+<p>Each of these is designed in such a way that it will analytically be
+perfectly perceptually-uniform, both in regular form and also when
+converted to black-and-white. So we don&#39;t have to worry about that.</p>
+
+<p>The main question at this point then is just aesthetics: which of
+these do we want to &quot;represent matplotlib&#39;s brand&quot;?</p>
 
 <h3>Option A</h3>
 
@@ -60,20 +107,13 @@ src="./images/screenshots/option_a.png"></a></p>
 
 <p><a href="./images/screenshots/option_c.png"><img src="./images/screenshots/option_c.png"></a></p>
 
-<h3>Parula</h3>
-
-<p><a href="./images/screenshots/parula.png"><img src="./images/screenshots/parula.png"></a></p>
-
-<h3>Gray</h3>
-
-<p><a href="./images/screenshots/gray.png"><img src="./images/screenshots/gray.png"></a></p>
-
-<h2>How to generate these results</h2>
+<h2>Appendix: How to generate these results or play around with these further</h2>
 
 <ol>
 <li>Install the <a href="https://github.com/njsmith/pycam02ucs">pycam02ucs package</a>.</li>
-<li>Check out and run any of the
-<a href="https://github.com/bids/colormap">colormap scripts</a>.</li>
+<li>Check out the
+<a href="https://github.com/bids/colormap">colormap scripts</a>. Each file
+provides a variable named <code>test_cm</code> which is a matplotlib colormap object.</li>
 </ol>
 
 <p>To visualize matplotlib built-in colormaps:</p>
@@ -82,9 +122,18 @@ src="./images/screenshots/option_a.png"></a></p>
 <p>To visualize one of our colormaps:</p>
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m pycam02ucs.cm.viscm show path/to/colormap_script.py
 </code></pre></div>
-<p>To modify the colormap spline path:</p>
+<p>To make a nice screenshot like the ones above:</p>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m pycam02ucs.cm.viscm show CMAP --save MYFILE.png --quit
+</code></pre></div>
+<p>If you want to access the editor interface we used to make these
+colormaps and play around with designing your own variants:</p>
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m pycam02ucs.cm.viscm edit path/to/colormap_script.py
 </code></pre></div>
+<p>It looks like this. We are tired and want to go home, so we will leave
+you to explore how it works yourself, and write better docs later :-).</p>
+
+<p><a href="./images/screenshots/editor.png"><img src="./images/screenshots/editor.png"></a></p>
+
   </div>
 
 </body>
