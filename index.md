@@ -8,11 +8,11 @@ matplotlib's default, ``jet``.
 
 First for comparison we show what several well-known colormaps look
 like using a visualization tool we developed for assessing colormap
-quality, and then give 3 new colormaps that we've designed. We'd like
+quality, and then give <del>3</del> 4 new colormaps that we've designed. We'd like
 feedback on which one you like best!
 
 Please leave comments on
-[this thread](http://www.google.com/url?q=http%3A%2F%2Fthread.gmane.org%2Fgmane.comp.python.matplotlib.devel%2F13522&sa=D&sntz=1&usg=AFQjCNFdCG-0DNabGcTfCKL49OLY_Td66g)
+[this thread](http://thread.gmane.org/gmane.comp.python.matplotlib.devel/13522)
 or [email us directly](mailto:njs@pobox.com).
 
 ## Well-known colormaps
@@ -103,6 +103,10 @@ src="./images/screenshots/option_a.png"></a>
 <a href="./images/screenshots/option_c.png"><img src="./images/screenshots/option_c.png"></a>
 
 ### Option D
+
+UPDATE: Here's a newly added greenish alternative option, based on a
+[design by Eric Firing](http://thread.gmane.org/gmane.comp.python.matplotlib.devel/13522/focus=13542)
+but with more yellow added at the top:
 
 <a href="./images/screenshots/option_d.png"><img src="./images/screenshots/option_d.png"></a>
 
