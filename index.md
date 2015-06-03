@@ -102,6 +102,9 @@ src="./images/screenshots/option_a.png"></a>
 
 <a href="./images/screenshots/option_c.png"><img src="./images/screenshots/option_c.png"></a>
 
+### Option D
+
+<a href="./images/screenshots/option_d.png"><img src="./images/screenshots/option_d.png"></a>
 
 ## Appendix: How to generate these results or play around with these further
 
