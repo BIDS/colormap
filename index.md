@@ -64,15 +64,26 @@ src="./images/screenshots/option_a.png"></a>
 2. Check out and run any of the
    [colormap scripts](https://github.com/bids/colormap).
 
-### Explore existing 
+To visualize matplotlib built-in colormaps:
 
-To explore other colormaps:
+```sh
+python -m pycam02ucs.cm.viscm show jet
+```
 
-```python
-import matplotlib.pyplot as plt
-from pycam02ucs.cm.viscm import viscm
+To visualize one of our colormaps:
 
-viscm('jet')
+```sh
+python -m pycam02ucs.cm.viscm show path/to/colormap_script.py
+```
 
-plt.show()
+To modify the colormap spline path:
+
+```sh
+python -m pycam02ucs.cm.viscm edit path/to/colormap_script.py
+```
+
+For further help:
+
+```sh
+python -m pycam02ucs.cm.viscm --help
 ```

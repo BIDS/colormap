@@ -76,15 +76,14 @@ src="./images/screenshots/option_a.png"></a></p>
 <a href="https://github.com/bids/colormap">colormap scripts</a>.</li>
 </ol>
 
-<h3>Explore existing</h3>
-
-<p>To explore other colormaps:</p>
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">pycam02ucs.cm.viscm</span> <span class="kn">import</span> <span class="n">viscm</span>
-
-<span class="n">viscm</span><span class="p">(</span><span class="s">&#39;jet&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<p>To visualize matplotlib built-in colormaps:</p>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m pycam02ucs.cm.viscm show jet
+</code></pre></div>
+<p>To visualize one of our colormaps:</p>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m pycam02ucs.cm.viscm show path/to/colormap_script.py
+</code></pre></div>
+<p>To modify the colormap spline path:</p>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m pycam02ucs.cm.viscm edit path/to/colormap_script.py
 </code></pre></div>
   </div>
 
