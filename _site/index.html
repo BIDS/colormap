@@ -29,16 +29,36 @@ difference.</p>
 
 <h2>Colormaps</h2>
 
-<p>Click on any of the figure below to expand.</p>
+<p>Click on any of the figure below to expand.  The annotated parts are:</p>
 
-<h3>Black Purple</h3>
+<p>A) From top left to bottom right: the colormap, its grayscale version,
+perceptual deltas and perceptual lightness deltas.  Thereafter follows
+four different simulations of color blindness.</p>
 
-<p><a href="./images/screenshots/black-purple.png"><img
-src="./images/screenshots/black-purple.png"></a></p>
+<p>B) A 3-dimensional visualization of the colormap spline through
+   CAM02-UCS color space.  Click on the &quot;Toggle gamut&quot; button to see
+   the entire gamut.</p>
 
-<h3>Black Purple Yellow</h3>
+<p>C) Example images colored with the test colormap (left column) and how
+   it would be perceived by readers with the most common form of color
+   blindness (right column).</p>
 
-<p><a href="./images/screenshots/black-purple-yellow.png"><img src="./images/screenshots/black-purple-yellow.png"></a></p>
+<h3>Jet</h3>
+
+<p><a href="./images/screenshots/jet.png"><img src="./images/jet-annotated.png"></a></p>
+
+<h3>Option A</h3>
+
+<p><a href="./images/screenshots/option_a.png"><img
+src="./images/screenshots/option_a.png"></a></p>
+
+<h3>Option B</h3>
+
+<p><a href="./images/screenshots/option_b.png"><img src="./images/screenshots/option_b.png"></a></p>
+
+<h3>Option C</h3>
+
+<p><a href="./images/screenshots/option_c.png"><img src="./images/screenshots/option_c.png"></a></p>
 
 <h3>Parula</h3>
 
@@ -48,17 +68,15 @@ src="./images/screenshots/black-purple.png"></a></p>
 
 <p><a href="./images/screenshots/gray.png"><img src="./images/screenshots/gray.png"></a></p>
 
-<h3>Jet</h3>
-
-<p><a href="./images/screenshots/jet.png"><img src="./images/screenshots/jet.png"></a></p>
-
-<h2>How to generate</h2>
+<h2>How to generate these results</h2>
 
 <ol>
 <li>Install the <a href="https://github.com/njsmith/pycam02ucs">pycam02ucs package</a>.</li>
 <li>Check out and run any of the
 <a href="https://github.com/bids/colormap">colormap scripts</a>.</li>
 </ol>
+
+<h3>Explore existing</h3>
 
 <p>To explore other colormaps:</p>
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
