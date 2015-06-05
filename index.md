@@ -110,6 +110,44 @@ but with more yellow added at the top:
 
 <a href="./images/screenshots/option_d.png"><img src="./images/screenshots/option_d.png"></a>
 
+## A sample video using the above colormaps
+
+A simulation of galaxy formation, courtesy Nathan Goldbaum. You can
+watch the individual videos below, but I found it hard to compare
+apples-to-apples this way, so I also made a mosaic of all of them
+side-by-side, which you can <a
+href="http://vorpus.org/~njs/goldbaum-galaxies-all-colormaps.mkv">download
+here</a>. (I also uploaded to Youtube, but it ended up with terribly
+artifacty downscaling. You can <a
+href="https://www.youtube.com/watch?v=u9a4NO3iGgA">see here</a> if you
+really want, but I recommend downloading the <a
+href="http://vorpus.org/~njs/goldbaum-galaxies-all-colormaps.mkv">full-resolution
+file</a> instead.)
+
+Jet:
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/dsvT5hImPmo" frameborder="0" allowfullscreen></iframe>
+
+Parula:
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/8146CMi-OaQ" frameborder="0" allowfullscreen></iframe>
+
+Option A:
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/IqvxuQSzWO4" frameborder="0" allowfullscreen></iframe>
+
+Option B:
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/wa7bpV3XPV0" frameborder="0" allowfullscreen></iframe>
+
+Option C:
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/3rHbq4jw1ew" frameborder="0" allowfullscreen></iframe>
+
+Option D:
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/2_HiUXVNm2k" frameborder="0" allowfullscreen></iframe>
+
 ## Appendix: How to generate these results or play around with these further
 
 1. Install the [pycam02ucs package](https://github.com/njsmith/pycam02ucs).
