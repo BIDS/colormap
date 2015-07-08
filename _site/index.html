@@ -162,24 +162,24 @@ file</a> instead.)</p>
 <h2>Appendix: How to generate these results or play around with these further</h2>
 
 <ol>
-<li>Install the <a href="https://github.com/njsmith/pycam02ucs">pycam02ucs package</a>.</li>
+<li><code>pip install viscm</code></li>
 <li>Check out the
 <a href="https://github.com/bids/colormap">colormap scripts</a>. Each file
 provides a variable named <code>test_cm</code> which is a matplotlib colormap object.</li>
 </ol>
 
 <p>To visualize matplotlib built-in colormaps:</p>
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m pycam02ucs.cm.viscm show jet
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m viscm show jet
 </code></pre></div>
 <p>To visualize one of our colormaps:</p>
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m pycam02ucs.cm.viscm show path/to/colormap_script.py
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m viscm show path/to/colormap_script.py
 </code></pre></div>
 <p>To make a nice screenshot like the ones above:</p>
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m pycam02ucs.cm.viscm show CMAP --save MYFILE.png --quit
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m viscm show CMAP --save MYFILE.png --quit
 </code></pre></div>
 <p>If you want to access the editor interface we used to make these
 colormaps and play around with designing your own variants:</p>
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m pycam02ucs.cm.viscm edit path/to/colormap_script.py
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m viscm edit path/to/colormap_script.py
 </code></pre></div>
 <p>It looks like this. We leave it as an exercise for the reader to play around
 and figure out how it works--we may write up detailed docs later, but for now

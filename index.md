@@ -150,7 +150,7 @@ Option D:
 
 ## Appendix: How to generate these results or play around with these further
 
-1. Install the [pycam02ucs package](https://github.com/njsmith/pycam02ucs).
+1. `pip install viscm`
 2. Check out the
    [colormap scripts](https://github.com/bids/colormap). Each file
    provides a variable named `test_cm` which is a matplotlib colormap object.
@@ -158,19 +158,19 @@ Option D:
 To visualize matplotlib built-in colormaps:
 
 ```sh
-python -m pycam02ucs.cm.viscm show jet
+python -m viscm show jet
 ```
 
 To visualize one of our colormaps:
 
 ```sh
-python -m pycam02ucs.cm.viscm show path/to/colormap_script.py
+python -m viscm show path/to/colormap_script.py
 ```
 
 To make a nice screenshot like the ones above:
 
 ```sh
-python -m pycam02ucs.cm.viscm show CMAP --save MYFILE.png --quit
+python -m viscm show CMAP --save MYFILE.png --quit
 ```
 
 
@@ -178,7 +178,7 @@ If you want to access the editor interface we used to make these
 colormaps and play around with designing your own variants:
 
 ```sh
-python -m pycam02ucs.cm.viscm edit path/to/colormap_script.py
+python -m viscm edit path/to/colormap_script.py
 ```
 
 It looks like this. We leave it as an exercise for the reader to play around
