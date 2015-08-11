@@ -2,6 +2,15 @@
 layout: default
 ---
 
+**Update:** *These colormaps
+ [have been merged](https://github.com/matplotlib/matplotlib/pull/4707)
+ into the development version of Matplotlib.  Below is the talk
+ presented at SciPy2015 that outlines the whole story.*
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xAoljeRJ3lU" frameborder="0" allowfullscreen></iframe>
+
+---
+
 This page gives an overview of the colormaps we (= Stéfan van der Walt
 and Nathaniel Smith) have designed as potential replacements for
 matplotlib's default, ``jet``.
