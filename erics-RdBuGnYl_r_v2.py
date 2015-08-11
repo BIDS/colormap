@@ -2,7 +2,7 @@
 from matplotlib.colors import LinearSegmentedColormap
 from numpy import nan, inf
 
-# Used to reconstruct the colormap in pycam02ucs.cm.viscm
+# Used to reconstruct the colormap in viscm
 parameters = {'xp': [28.782590300914933, 59.705365170024862, -27.718282299434122, -58.259294515838988, -31.917671479189778, -2.9037098736051519],
               'yp': [16.928446771378731, -47.207678883071537, -85.002181500872581, 2.4214659685864035, 64.64877835951134, 25.70898778359512],
               'min_JK': 18.0859375,
@@ -273,10 +273,10 @@ if __name__ == "__main__":
     import numpy as np
 
     try:
-        from pycam02ucs.cm.viscm import viscm
+        from viscm import viscm
         viscm(test_cm)
     except ImportError:
-        print("pycam02ucs not found, falling back on simple display")
+        print("viscm not found, falling back on simple display")
         plt.imshow(np.linspace(0, 100, 256)[None, :], aspect='auto',
                    cmap=test_cm)
     plt.show()

@@ -51,10 +51,10 @@ if __name__ == "__main__":
     import numpy as np
 
     try:
-        from pycam02ucs.cm.viscm import viscm
+        from viscm import viscm
         viscm(parula_map)
     except ImportError:
-        print("pycam02ucs not found, falling back on simple display")
+        print("viscm not found, falling back on simple display")
         plt.imshow(np.linspace(0, 100, 256)[None, :], aspect='auto',
                    cmap=parula_map)
     plt.show()
