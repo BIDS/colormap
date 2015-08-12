@@ -4,10 +4,16 @@ layout: default
 
 **Update:** *These colormaps
  [have been merged](https://github.com/matplotlib/matplotlib/pull/4707)
- into the development version of Matplotlib.  Below is the talk
- presented at SciPy2015 that outlines the whole story.*
+ into the development version of Matplotlib, and "option D" below
+ [will be the new default colormap](http://matplotlib.org/style_changes.html).
+ Below is the talk presented at SciPy2015 that outlines the whole
+ story.*
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xAoljeRJ3lU" frameborder="0" allowfullscreen></iframe>
+
+*The rest of this page is preserved for historical reference. If you
+ have comments, concerns, or questions about the new colormaps, please
+ email them to the matplotlib mailing list.*
 
 ---
 
@@ -20,9 +26,10 @@ like using a visualization tool we developed for assessing colormap
 quality, and then give <del>3</del> 4 new colormaps that we've designed. We'd like
 feedback on which one you like best!
 
-Please leave comments on
+<del>Please leave comments on
 [this thread](http://thread.gmane.org/gmane.comp.python.matplotlib.devel/13522)
-or [email us directly](mailto:njs@pobox.com).
+or [email us directly](mailto:njs@pobox.com)</del> (update: see
+above).
 
 ## Well-known colormaps
 
