@@ -6,10 +6,14 @@ layout: default
  [have been merged](https://github.com/matplotlib/matplotlib/pull/4707)
  into the development version of Matplotlib, all of them will be
  included in matplotlib 1.5, and "option D" (now called "viridis")
- [will be the new default colormap in matplotlib 2.0](http://matplotlib.org/style_changes.html). Third
- parties have also made it available in
+ [will be the new default colormap in matplotlib 2.0](http://matplotlib.org/style_changes.html). If you just
+ want the colormaps themselves, they're [available in a
+ single file here](https://github.com/BIDS/colormap/blob/master/colormaps.py)
+ under a [CC0](https://creativecommons.org/about/cc0) "no rights
+ reserved" license. Third
+ parties have also made viridis available in
  [R](https://cran.r-project.org/web/packages/viridis/) and
- [Matlab](http://www.met.reading.ac.uk/~ed/viridis.m).  Below is the
+ [Matlab](http://www.met.reading.ac.uk/~ed/viridis.m). Below is the
  talk presented at SciPy2015 that outlines the whole story.*
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xAoljeRJ3lU" frameborder="0" allowfullscreen></iframe>
