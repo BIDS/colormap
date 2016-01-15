@@ -13,7 +13,8 @@ layout: default
  reserved" license. Third
  parties have also made viridis available in
  [R](https://cran.r-project.org/web/packages/viridis/) and
- [Matlab](http://www.met.reading.ac.uk/~ed/viridis.m). Below is the
+ [Matlab](http://www.met.reading.ac.uk/~ed/viridis.m) and
+ [JavaScript / D3](https://github.com/politiken-journalism/scale-color-perceptual). Below is the
  talk presented at SciPy2015 that outlines the whole story.*
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xAoljeRJ3lU" frameborder="0" allowfullscreen></iframe>
