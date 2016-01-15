@@ -113,20 +113,20 @@ converted to black-and-white. So we don't have to worry about that.
 The main question at this point then is just aesthetics: which of
 these do we want to "represent matplotlib's brand"?
 
-### Option A
+### Option A (Magma)
 
 <a href="./images/screenshots/option_a.png"><img
 src="./images/screenshots/option_a.png"></a>
 
-### Option B
+### Option B (Inferno)
 
 <a href="./images/screenshots/option_b.png"><img src="./images/screenshots/option_b.png"></a>
 
-### Option C
+### Option C (Plasma)
 
 <a href="./images/screenshots/option_c.png"><img src="./images/screenshots/option_c.png"></a>
 
-### Option D
+### Option D (Viridis)
 
 UPDATE: Here's a newly added greenish alternative option, based on a
 [design by Eric Firing](http://thread.gmane.org/gmane.comp.python.matplotlib.devel/13522/focus=13542)
