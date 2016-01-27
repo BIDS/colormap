@@ -205,6 +205,17 @@ colormaps and play around with designing your own variants:
 python -m viscm edit path/to/colormap_script.py
 ```
 
+[UPDATE: note that due to [the bug described here](https://colorspacious.readthedocs.org/en/latest/changes.html#v1-0-0),
+then if you want to edit the colormaps in this repo in the original
+form, you'll need to pass `--uniform-space buggy-CAM02-UCS` to the
+`viscm edit` call above. The bug had negligible effect on the key
+properties of the colorspace, but it did cause the space to be
+rescaled overall, so that the coordinate paths that were chosen using
+the buggy space do not make sense in the new space. If you're
+designing a new colormap, you should make sure you have the latest
+version of `viscm` and `colorspacious`, and then ignore all this and
+just run `python -m viscm edit`.]
+
 It looks like this. We leave it as an exercise for the reader to play around
 and figure out how it works--we may write up detailed docs later, but for now
 just some simple usage instructions:

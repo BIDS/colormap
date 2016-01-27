@@ -205,6 +205,17 @@ provides a variable named <code>test_cm</code> which is a matplotlib colormap ob
 colormaps and play around with designing your own variants:</p>
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">python -m viscm edit path/to/colormap_script.py
 </code></pre></div>
+<p>[UPDATE: note that due to <a href="https://colorspacious.readthedocs.org/en/latest/changes.html#v1-0-0">the bug described here</a>,
+then if you want to edit the colormaps in this repo in the original
+form, you&#39;ll need to pass <code>--uniform-space buggy-CAM02-UCS</code> to the
+<code>viscm edit</code> call above. The bug had negligible effect on the key
+properties of the colorspace, but it did cause the space to be
+rescaled overall, so that the coordinate paths that were chosen using
+the buggy space do not make sense in the new space. If you&#39;re
+designing a new colormap, you should make sure you have the latest
+version of <code>viscm</code> and <code>colorspacious</code>, and then ignore all this and
+just run <code>python -m viscm edit</code>.]</p>
+
 <p>It looks like this. We leave it as an exercise for the reader to play around
 and figure out how it works--we may write up detailed docs later, but for now
 just some simple usage instructions:</p>
