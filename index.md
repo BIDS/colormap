@@ -182,19 +182,19 @@ Option D:
 To visualize matplotlib built-in colormaps:
 
 ```sh
-python -m viscm show jet
+python -m viscm view jet
 ```
 
 To visualize one of our colormaps:
 
 ```sh
-python -m viscm show path/to/colormap_script.py
+python -m viscm view path/to/colormap_script.py
 ```
 
 To make a nice screenshot like the ones above:
 
 ```sh
-python -m viscm show CMAP --save MYFILE.png --quit
+python -m viscm view CMAP --save MYFILE.png --quit
 ```
 
 
