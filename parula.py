@@ -1,3 +1,8 @@
+# NOTE:
+# This is a copy of "parula" from MATLAB. We don't claim any rights to this
+# file, but The Mathworks does. Consult them and/or a lawyer if you want to
+# use it.
+
 from matplotlib.colors import LinearSegmentedColormap
 
 cm_data = [[0.2081, 0.1663, 0.5292], [0.2116238095, 0.1897809524, 0.5776761905], 
